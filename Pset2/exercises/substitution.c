@@ -84,7 +84,7 @@ string encryptMessage(string key, string message)
             doneEncrypt[i] = key[index];
 
         }
-        else
+        else if(message[i] >= 'a' && message[i] <= 'z')
         {
             index = message[i] - 97;
             doneEncrypt[i] = key[index];
